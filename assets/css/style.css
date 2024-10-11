@@ -1,0 +1,176 @@
+/*Estilos generales*/
+* {
+    font-family: 'Fira Code', monospace;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #282C33;
+    color: white;
+}
+
+html {
+    overflow-y: scroll; /* Esto asegura que la barra de desplazamiento siempre esté visible */
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+#icon {
+    width: 70px;
+    height: 30px;
+}
+
+main {
+    flex: 1;
+}
+/*botones*/
+.btn:not(#language-btn){
+    background-color: #282C33;
+    border-color: #C778DD;
+    border-radius: 0%;
+    padding: 10px 20px;
+    margin-left: 10px;
+    color: white;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover:not(#language-btn, #flags){
+    background-color: hsla(289, 60%, 67%, 0.1);
+    border-color: #C778DD;
+    transform: scale(1.05);
+    color: white;
+}
+
+#language-btn {
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#language-btn:hover {
+    background-color: hsla(289, 60%, 67%, 0.3);
+}
+/*Fin estilos generales*/
+
+/*Estilos pagina Principal*/
+span {
+    color: #C778DD;
+}
+
+#index-card {
+    height: 220px;
+    margin-bottom: 20px;
+    background-color: #282C33;
+    border-color: gray;
+    border-radius: 0;
+}
+
+.card-list {
+    color: gray;
+}
+
+#habilidades .list-group-item {
+    font-size: 1.2em;
+}
+/*Fin estilos pagina principal*/
+
+/*Estilos pagina contacto*/
+#contacto {
+    background: transparent;
+    padding: 40px 0;
+}
+
+#title {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    background-color: #282C33;
+    border-radius: 0;
+    margin: 10px;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #282C33;
+    color: white;
+    outline: none;
+}
+
+.form-control:-webkit-autofill, .form-control:-webkit-autofill:hover, .form-control:-webkit-autofill:focus{
+    background-color: #282C33 !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+/*Fin estilos pagina contacto*/
+
+/*Estilos pagina proyectos*/
+.texto-proyectos { 
+    margin-bottom: 30px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+#projects-card {
+    margin-bottom: 20px;
+    background-color: #282C33;
+    border-color: gray;
+    border-radius: 0;
+}
+
+#under-construction {
+    height: 380px;
+}
+
+#titulo-cards {
+    border-color: gray;
+}
+
+.card-text {
+    color: gray;
+}
+/*Fin estilos pagina proyectos*/
+#sobreMi_container {
+    text-align: center;
+}
+
+.toggle-btn {
+    margin-bottom: 10px;
+}
+/*Estilos pagina sobreMi*/
+.texto1, .texto2 {
+    display: none;
+    text-align: justify;
+    padding: 10px;
+}
+
+.item-texto2 {
+    padding-left: 0;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+/*Fin estilos pagina sobre mi*/
+@media (max-width: 576px) {
+    #habilidades .card {
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
