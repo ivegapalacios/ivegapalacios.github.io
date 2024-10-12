@@ -145,6 +145,8 @@ span {
     color: gray;
 }
 /*Fin estilos pagina proyectos*/
+
+/*Estilos pagina sobreMi*/
 #sobreMi_container {
     text-align: center;
 }
@@ -152,7 +154,12 @@ span {
 .toggle-btn {
     margin-bottom: 10px;
 }
-/*Estilos pagina sobreMi*/
+
+#toggle-btn-1, #toggle-btn-2 {
+    width: 30%;
+    max-width: 200px;
+}
+
 .texto1, .texto2 {
     display: none;
     text-align: justify;
@@ -165,12 +172,154 @@ span {
     margin-top: 10px;
 }
 /*Fin estilos pagina sobre mi*/
-@media (max-width: 576px) {
+
+/*Responsive Design*/
+
+/*Pantallas pequeñas*/
+@media (max-width: 480px) {
+    #contacto {
+        margin-right: 15px;
+    }
+
+    #toggle-btn-1, #toggle-btn-2 {
+        width: 40%;
+        margin-left: 0 !important;
+    }
+
+    #container_sobreMi_1 {
+        width: 90%;
+    }
+
+    #projects-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col-md-4 {
+        flex: 0 0 90%; /* Opción para ajustar el tamaño de la columna */
+        max-width: 90%;
+    }
+}
+
+/*Pantallas medianas y grandes (celulares)*/
+@media (min-width: 481px) and (max-width: 767px) {
     #habilidades .card {
         margin-bottom: 15px;
     }
 
+    #contacto {
+        margin-right: 15px;
+    }
+
+    #toggle-btn-1, #toggle-btn-2 {
+        width: 40%;
+        margin-left: 0 !important;
+    }
+
+    #container_sobreMi_1 {
+        width: 90%;
+    }
+
+    #projects-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col-md-4 {
+        flex: 0 0 80%; 
+        max-width: 80%;
+    }
+
     footer p {
         font-size: 0.9em;
+    }
+}
+
+/*Pantallas pequeñas tablets*/
+@media (min-width: 767px) and (max-width: 989px){
+    #toggle-btn-1, #toggle-btn-2 {
+        width: 30%;
+        margin-left: 0 !important;
+    }
+
+    #container_sobreMi_1 {
+        width: 100%;
+    }
+
+    #carouselProyectos {
+        margin-top: 20px !important;
+    }
+
+    #projects-card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .col-md-4 {
+        flex: 0 0 80%; 
+        max-width: 80%;
+    }
+}
+
+/*Pantallas grandes tablets*/
+@media (min-width: 990px) and (max-width: 1279px){
+    #toggle-btn-1, #toggle-btn-2 {
+        width: 30%;
+    }
+
+    #container_sobreMi_1 {
+        width: 100%;
+    }
+
+    #projects-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 60%;
+    }
+}
+
+/*laptops y pantallas estandar*/
+@media (min-width: 1280px) and (max-width: 1439px) {
+    #toggle-btn-1, #toggle-btn-2 {
+        width: 30%;
+    }
+
+    #container_sobreMi_1 {
+        width: 100%;
+    }
+
+    #projects-card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 60%;
+    }
+}
+
+/*monitores grandes y pantallas de escritorio*/
+@media (min-width: 1440px) {
+    #toggle-btn-1, #toggle-btn-2 {
+        width: 30%;
+    }
+
+    #container_sobreMi_1 {
+        width: 100%;
+    }
+
+    #projects-card {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 60%;
     }
 }
