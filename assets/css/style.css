@@ -195,7 +195,7 @@ span {
         margin: 0 auto;
     }
 
-    .col-md-4 {
+    #project-card-container {
         flex: 0 0 90%; /* Opción para ajustar el tamaño de la columna */
         max-width: 90%;
     }
@@ -225,7 +225,7 @@ span {
         margin: 0 auto;
     }
 
-    .col-md-4 {
+    #project-card-container {
         flex: 0 0 80%; 
         max-width: 80%;
     }
@@ -255,7 +255,7 @@ span {
         margin: 0 auto;
     }
 
-    .col-md-4 {
+    #project-card-container {
         flex: 0 0 80%; 
         max-width: 80%;
     }
@@ -276,7 +276,7 @@ span {
         margin: 0 auto;
     }
 
-    .col-md-4 {
+    #project-card-container {
         flex: 0 0 50%;
         max-width: 60%;
     }
@@ -297,7 +297,7 @@ span {
         margin: 0 auto;
     }
 
-    .col-md-4 {
+    #project-card-container {
         flex: 0 0 50%;
         max-width: 60%;
     }
@@ -318,7 +318,7 @@ span {
         margin: 0 auto;
     }
 
-    .col-md-4 {
+    #project-card-container {
         flex: 0 0 50%;
         max-width: 60%;
     }
